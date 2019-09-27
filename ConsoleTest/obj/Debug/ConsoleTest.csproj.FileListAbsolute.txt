@@ -1,0 +1,10 @@
+D:\Projects\AmazonOnlineAssessment\ConsoleTest\bin\Debug\ConsoleTest.exe.config
+D:\Projects\AmazonOnlineAssessment\ConsoleTest\bin\Debug\ConsoleTest.exe
+D:\Projects\AmazonOnlineAssessment\ConsoleTest\bin\Debug\ConsoleTest.pdb
+D:\Projects\AmazonOnlineAssessment\ConsoleTest\bin\Debug\AmazonOnlineAssessment.dll
+D:\Projects\AmazonOnlineAssessment\ConsoleTest\bin\Debug\AmazonOnlineAssessment.pdb
+D:\Projects\AmazonOnlineAssessment\ConsoleTest\obj\Debug\ConsoleTest.csprojAssemblyReference.cache
+D:\Projects\AmazonOnlineAssessment\ConsoleTest\obj\Debug\ConsoleTest.csproj.CoreCompileInputs.cache
+D:\Projects\AmazonOnlineAssessment\ConsoleTest\obj\Debug\ConsoleTest.csproj.CopyComplete
+D:\Projects\AmazonOnlineAssessment\ConsoleTest\obj\Debug\ConsoleTest.exe
+D:\Projects\AmazonOnlineAssessment\ConsoleTest\obj\Debug\ConsoleTest.pdb

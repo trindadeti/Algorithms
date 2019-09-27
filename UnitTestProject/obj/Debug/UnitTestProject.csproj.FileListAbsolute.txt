@@ -1,0 +1,16 @@
+D:\Projects\AmazonOnlineAssessment\UnitTestProject\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.dll
+D:\Projects\AmazonOnlineAssessment\UnitTestProject\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.Interface.dll
+D:\Projects\AmazonOnlineAssessment\UnitTestProject\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.dll
+D:\Projects\AmazonOnlineAssessment\UnitTestProject\bin\Debug\UnitTestProject.dll
+D:\Projects\AmazonOnlineAssessment\UnitTestProject\bin\Debug\UnitTestProject.pdb
+D:\Projects\AmazonOnlineAssessment\UnitTestProject\bin\Debug\AmazonOnlineAssessment.dll
+D:\Projects\AmazonOnlineAssessment\UnitTestProject\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.dll
+D:\Projects\AmazonOnlineAssessment\UnitTestProject\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.dll
+D:\Projects\AmazonOnlineAssessment\UnitTestProject\bin\Debug\AmazonOnlineAssessment.pdb
+D:\Projects\AmazonOnlineAssessment\UnitTestProject\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.xml
+D:\Projects\AmazonOnlineAssessment\UnitTestProject\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.xml
+D:\Projects\AmazonOnlineAssessment\UnitTestProject\obj\Debug\UnitTestProject.csprojAssemblyReference.cache
+D:\Projects\AmazonOnlineAssessment\UnitTestProject\obj\Debug\UnitTestProject.csproj.CoreCompileInputs.cache
+D:\Projects\AmazonOnlineAssessment\UnitTestProject\obj\Debug\UnitTestProject.csproj.CopyComplete
+D:\Projects\AmazonOnlineAssessment\UnitTestProject\obj\Debug\UnitTestProject.dll
+D:\Projects\AmazonOnlineAssessment\UnitTestProject\obj\Debug\UnitTestProject.pdb

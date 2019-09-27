@@ -1,0 +1,9 @@
+D:\Projects\AmazonOnlineAssessment\AmazonOnlineAssessment\bin\Debug\netstandard2.0\AmazonOnlineAssessment.deps.json
+D:\Projects\AmazonOnlineAssessment\AmazonOnlineAssessment\bin\Debug\netstandard2.0\AmazonOnlineAssessment.dll
+D:\Projects\AmazonOnlineAssessment\AmazonOnlineAssessment\bin\Debug\netstandard2.0\AmazonOnlineAssessment.pdb
+D:\Projects\AmazonOnlineAssessment\AmazonOnlineAssessment\obj\Debug\netstandard2.0\AmazonOnlineAssessment.csprojAssemblyReference.cache
+D:\Projects\AmazonOnlineAssessment\AmazonOnlineAssessment\obj\Debug\netstandard2.0\AmazonOnlineAssessment.csproj.CoreCompileInputs.cache
+D:\Projects\AmazonOnlineAssessment\AmazonOnlineAssessment\obj\Debug\netstandard2.0\AmazonOnlineAssessment.AssemblyInfoInputs.cache
+D:\Projects\AmazonOnlineAssessment\AmazonOnlineAssessment\obj\Debug\netstandard2.0\AmazonOnlineAssessment.AssemblyInfo.cs
+D:\Projects\AmazonOnlineAssessment\AmazonOnlineAssessment\obj\Debug\netstandard2.0\AmazonOnlineAssessment.dll
+D:\Projects\AmazonOnlineAssessment\AmazonOnlineAssessment\obj\Debug\netstandard2.0\AmazonOnlineAssessment.pdb
