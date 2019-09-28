@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Text;
 
 namespace AmazonOnlineAssessment
@@ -26,23 +27,26 @@ namespace AmazonOnlineAssessment
 
         public (int, int) GetPairMultiple(int[] a1, int target)
         {
-            int nextMultiple = 0;
+            List<int> listNumber = new List<int>(a1);
+            List<int> newListNumber = new List<int>();
+
             for (int i = 0; i < a1.Length; i++)
             {
-                if (a1[i] > 0)
-                    nextMultiple = target / a1[i];
+                var item = a1[i];
+                var nextItem = a1[i + 1];
+                newListNumber.Add(item);
 
-                for (int j = i + 1; j < a1.Length; j++)
-                {
-                    if (a1[j] == nextMultiple)
-                        return (a1[i], a1[j]);
+                var otherMultiple = target / nextItem;
+
+                if (listNumber.Contains(otherMultiple)) {
+                    return (nextItem, otherMultiple);
                 }
             }
 
             return (0, 0);
         }
 
-        public int GetTheMostReccurancyNumber(int[] array, int[] array2)
+        public int GetTheMostReccurancyNumber(int[] array)
         {
             Array.Sort(array);
             int maxCount = -1; int maxItem = -1;
@@ -69,6 +73,45 @@ namespace AmazonOnlineAssessment
 
             return maxItem;
         }
+
+        public IEnumerable<int> GetIntersectElements(int[] arrayA, int[] arrayB)
+        {
+            var newData = arrayA.Intersect(arrayB);
+
+            return newData;
+        }
+
+        public bool IsRotaion(int[] arrayA, int[] arrayB)
+        {
+
+            var value = arrayA[0];
+            var indexB = Array.IndexOf(arrayB, value);
+            int indexA = 0;
+
+
+            for (int i = indexB; i < arrayB.Length; i++)
+            {
+                
+                if (arrayB[i] != arrayA[indexA])
+                {
+                    return false;
+                }
+
+                indexA++;
+            }
+
+            for (int i = 0; i < indexB; i++)
+            {
+                if (arrayB[i] != arrayA[indexA])
+                {
+                    return false;
+                }
+
+                indexA++;
+            }
+
+            return true;
+        }
     }
-    
+
 }

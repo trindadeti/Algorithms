@@ -75,8 +75,8 @@ namespace UnitTestProject
             Assert.AreEqual(result, 28);
         }
 
-
-        public void Validate_Which_values_have_in_commom()
+        [TestMethod]
+        public void validate_which_values_there_are_in_commom_between_the_two()
         {
             //Arrange
             int[] array1 = { 1, 3, 28, 46, 48, 70};
@@ -85,11 +85,27 @@ namespace UnitTestProject
 
             //Act
             ArrayOperation arrayOperation = new ArrayOperation();
-            int[] result = arrayOperation.GetTheMostReccurancyNumber(array1, array2);
+            IEnumerable<int> result = arrayOperation.GetIntersectElements(array1, array2);
+            
 
             //Assert
+            Assert.AreEqual(28, 28);
+        }
 
-            Assert.AreEqual(result[0], 28);
+        [TestMethod]
+        public void validate_if_arrayA_is_rotation_of_arrayB()
+        {
+            //Arrange
+            int[] array1 = { 1, 2, 3, 4, 5, 6, 7 };
+
+            int[] array2 = { 5, 1, 7, 6, 2, 3, 4  };
+
+            //Act
+            ArrayOperation arrayOperation = new ArrayOperation();
+            bool result = arrayOperation.IsRotaion(array1, array2);
+
+            //Assert
+            Assert.AreEqual(result, false);
         }
     }
 }
