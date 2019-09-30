@@ -98,14 +98,93 @@ namespace UnitTestProject
             //Arrange
             int[] array1 = { 1, 2, 3, 4, 5, 6, 7 };
 
-            int[] array2 = { 5, 1, 7, 6, 2, 3, 4  };
+            int[] array2 = { 2, 3, 4, 5, 6, 7, 1  };
 
             //Act
             ArrayOperation arrayOperation = new ArrayOperation();
             bool result = arrayOperation.IsRotaion(array1, array2);
 
             //Assert
-            Assert.AreEqual(result, false);
+            Assert.AreEqual(result, true);
         }
+
+        [TestMethod]
+        public void return_first_non_repeating_letter()
+        {
+            //Arrange
+            string str = "aabcc";
+            string strA = "aabccbeffeh";
+            string strB = "abbcc";
+            string strC = "aabbcc";
+
+            //Act
+            ArrayOperation arrayOperation = new ArrayOperation();
+            char? result = arrayOperation.NonRepeating(str);
+            char? resultA = arrayOperation.NonRepeating(strA);
+            char? resultB = arrayOperation.NonRepeating(strB);
+            char? resultC = arrayOperation.NonRepeating(strC);
+
+            //Assert
+            Assert.AreEqual(result, 'b');
+            Assert.AreEqual(resultA, 'h');
+            Assert.AreEqual(resultB, 'a');
+            Assert.AreEqual(resultC, null);
+        }
+
+        public void validate_if_this_string_is_one_way_of_the_other()
+        {
+            //Arrange
+            string str = "aabcc";
+            string strA = "aabccbeffeh";
+            string strB = "abbcc";
+            string strC = "aabbcc";
+
+            //Act
+            ArrayOperation arrayOperation = new ArrayOperation();
+            char? result = arrayOperation.NonRepeating(str);
+            char? resultA = arrayOperation.NonRepeating(strA);
+            char? resultB = arrayOperation.NonRepeating(strB);
+            char? resultC = arrayOperation.NonRepeating(strC);
+
+            //Assert
+            Assert.AreEqual(result, 'b');
+            Assert.AreEqual(resultA, 'h');
+            Assert.AreEqual(resultB, 'a');
+            Assert.AreEqual(resultC, null);
+        }
+
+        [TestMethod]
+        public void validate()
+        {
+            int[] array = { 1, 0, 0, 0, 0, 1, 0, 0 };
+            int[] array2 = { 1, 1, 1, 0, 1, 1, 1, 1 };
+            //Act
+            ArrayOperation arrayOperation = new ArrayOperation();
+            int[] result = arrayOperation.cellCompete(array,1);
+            int[] result2 = arrayOperation.cellCompete(array2, 2);
+
+            int[] arrayResult = { 0, 1, 0, 0, 1, 0, 1, 0 };
+            int[] arrayResult2 = { 0, 0, 0, 0, 0, 1, 1, 0 };
+
+            //Assert
+            Assert.AreEqual(result[0], arrayResult[0]);
+            Assert.AreEqual(result[1], arrayResult[1]);
+            Assert.AreEqual(result[2], arrayResult[2]);
+            Assert.AreEqual(result[3], arrayResult[3]);
+            Assert.AreEqual(result[4], arrayResult[4]);
+            Assert.AreEqual(result[5], arrayResult[5]);
+            Assert.AreEqual(result[6], arrayResult[6]);
+            Assert.AreEqual(result[7], arrayResult[7]);
+
+            Assert.AreEqual(result2[0], arrayResult2[0]);
+            Assert.AreEqual(result2[1], arrayResult2[1]);
+            Assert.AreEqual(result2[2], arrayResult2[2]);
+            Assert.AreEqual(result2[3], arrayResult2[3]);
+            Assert.AreEqual(result2[4], arrayResult2[4]);
+            Assert.AreEqual(result2[5], arrayResult2[5]);
+            Assert.AreEqual(result2[6], arrayResult2[6]);
+            Assert.AreEqual(result2[7], arrayResult2[7]);
+        }
+
     }
 }

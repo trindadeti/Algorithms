@@ -38,7 +38,8 @@ namespace AmazonOnlineAssessment
 
                 var otherMultiple = target / nextItem;
 
-                if (listNumber.Contains(otherMultiple)) {
+                if (listNumber.Contains(otherMultiple))
+                {
                     return (nextItem, otherMultiple);
                 }
             }
@@ -86,12 +87,15 @@ namespace AmazonOnlineAssessment
 
             var value = arrayA[0];
             var indexB = Array.IndexOf(arrayB, value);
+
+            if (indexB == -1) return false;
+
             int indexA = 0;
 
 
             for (int i = indexB; i < arrayB.Length; i++)
             {
-                
+
                 if (arrayB[i] != arrayA[indexA])
                 {
                     return false;
@@ -112,6 +116,61 @@ namespace AmazonOnlineAssessment
 
             return true;
         }
-    }
 
+
+        public char? NonRepeating(string str)
+        {
+            Dictionary<char, int> individualLetters = new Dictionary<char, int>();
+
+            for (int i = 0; i < str.Length; i++)
+            {
+                char letter = str[i];
+
+                if (individualLetters.ContainsKey(letter))
+                    individualLetters[letter] += 1;
+                else
+                    individualLetters.Add(letter, 1);
+            }
+
+            if (!individualLetters.Any(x => x.Value == 1))
+                return null;
+            else
+                return individualLetters.FirstOrDefault(x => x.Value == 1).Key;
+        }
+
+        public int[] cellCompete(int[] states, int days)
+        {
+            int previousHouse = 0;
+            int nextHouse = 0;
+            int[] newStates = new int[8];
+
+            for (int day = 1; day <= days; day++)
+            {
+                System.Console.Write("day " + day + " = ");
+
+                for (int x = 0; x < states.Length; x++)
+                {
+                    if (x == 0)
+                        previousHouse = 0;
+                    else
+                        previousHouse = states[x - 1];
+
+                    if (x == states.Length - 1)
+                        nextHouse = 0;
+                    else
+                        nextHouse = states[x + 1];
+
+                    if (previousHouse == nextHouse)
+                        newStates[x] = 0;
+                    else
+                        newStates[x] = 1;
+                }
+
+                Array.Copy(newStates, 0, states, 0, newStates.Length);
+            }
+
+            return newStates;
+
+        }
+    }
 }
