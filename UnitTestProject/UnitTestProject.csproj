@@ -49,6 +49,7 @@
     <Reference Include="System.Core" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="MatrixOperationTest.cs" />
     <Compile Include="StringOperationTest.cs" />
     <Compile Include="ArrayOperationTest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
