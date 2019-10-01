@@ -52,7 +52,7 @@ namespace UnitTestProject
 
             //Act
             ArrayOperation arrayOperation = new ArrayOperation();
-            var result = arrayOperation.GetPairMultiple(a1,target);
+            var result = arrayOperation.GetPairMultiple(a1, target);
 
             //Assert
 
@@ -64,7 +64,7 @@ namespace UnitTestProject
         public void Validate_Which_Number_Has_More_Recurrency()
         {
             //Arrange
-            int[] array = { 1, 3, 28, 3, 2, 1, 28,  28 ,28 };
+            int[] array = { 1, 3, 28, 3, 2, 1, 28, 28, 28 };
 
             //Act
             ArrayOperation arrayOperation = new ArrayOperation();
@@ -79,14 +79,14 @@ namespace UnitTestProject
         public void validate_which_values_there_are_in_commom_between_the_two()
         {
             //Arrange
-            int[] array1 = { 1, 3, 28, 46, 48, 70};
+            int[] array1 = { 1, 3, 28, 46, 48, 70 };
 
-            int[] array2 = { 28, 48, 70};
+            int[] array2 = { 28, 48, 70 };
 
             //Act
             ArrayOperation arrayOperation = new ArrayOperation();
             IEnumerable<int> result = arrayOperation.GetIntersectElements(array1, array2);
-            
+
 
             //Assert
             Assert.AreEqual(28, 28);
@@ -98,11 +98,11 @@ namespace UnitTestProject
             //Arrange
             int[] array1 = { 1, 2, 3, 4, 5, 6, 7 };
 
-            int[] array2 = { 2, 3, 4, 5, 6, 7, 1  };
+            int[] array2 = { 2, 3, 4, 5, 6, 7, 1 };
 
             //Act
             ArrayOperation arrayOperation = new ArrayOperation();
-            bool result = arrayOperation.IsRotaion(array1, array2);
+            bool result = arrayOperation.IsRotation(array1, array2);
 
             //Assert
             Assert.AreEqual(result, true);
@@ -160,7 +160,7 @@ namespace UnitTestProject
             int[] array2 = { 1, 1, 1, 0, 1, 1, 1, 1 };
             //Act
             ArrayOperation arrayOperation = new ArrayOperation();
-            int[] result = arrayOperation.cellCompete(array,1);
+            int[] result = arrayOperation.cellCompete(array, 1);
             int[] result2 = arrayOperation.cellCompete(array2, 2);
 
             int[] arrayResult = { 0, 1, 0, 0, 1, 0, 1, 0 };
@@ -185,6 +185,21 @@ namespace UnitTestProject
             Assert.AreEqual(result2[6], arrayResult2[6]);
             Assert.AreEqual(result2[7], arrayResult2[7]);
         }
+
+        [TestMethod]
+        public void validate_GDC()
+        {
+            //Arrange
+            int[] a = { 2, 3, 4, 5, 6 };
+
+            //Act
+            ArrayOperation arrayOperation = new ArrayOperation();
+            int result = arrayOperation.findGCD(a, 5);
+
+            //Assert
+            Assert.AreEqual(result, 1);
+        }
+
 
     }
 }

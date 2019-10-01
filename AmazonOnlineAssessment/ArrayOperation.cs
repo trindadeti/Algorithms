@@ -82,7 +82,7 @@ namespace AmazonOnlineAssessment
             return newData;
         }
 
-        public bool IsRotaion(int[] arrayA, int[] arrayB)
+        public bool IsRotation(int[] arrayA, int[] arrayB)
         {
 
             var value = arrayA[0];
@@ -172,5 +172,25 @@ namespace AmazonOnlineAssessment
             return newStates;
 
         }
+
+        public int gcd(int a, int b)
+        {
+            if (a == 0)
+                return b;
+            return gcd(b % a, a);
+        }
+
+        // Function to find gcd of  
+        // array of numbers 
+        public int findGCD(int[] arr, int n)
+        {
+            int result = arr[0];
+            for (int i = 1; i < n; i++)
+                result = gcd(arr[i], result);
+
+            return result;
+        }
+
+
     }
 }
